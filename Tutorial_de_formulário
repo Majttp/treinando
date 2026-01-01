@@ -1,0 +1,11 @@
+import streamlit as st
+
+# Formulários - permite dados do usuário
+st.set_page_config(layout="wide", page_title= "Tutorial de Formulário")
+#Criando a variável para o formulário
+nome=st.text_input("Informe seu nome:", placeholder="Preencha o seu nome")
+idade=st.number_input("Informe sua idade:", min_value=8, max_value=18, step=1)
+datanascimento=st.date_input("Informe a data de seu nascimento:", placeholder="Preencha a data de nascimento", format="DD/MM/YYYY")
+horaAtual=st.time_input("Selecione a hora:", step=60)
+
+CorPerfil=st.color_picker("Selecione a cor do perfil")
